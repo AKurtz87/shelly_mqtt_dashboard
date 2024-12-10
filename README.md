@@ -120,14 +120,4 @@ The Shelly application was used to enable the MQTT protocol on the devices. Subs
 
 ---
 
-## License
-
-This project is licensed under the ISC License.
-
-## Author
-
-Developed by **Alex Kurtz**.
-
----
-
 Let me know if you need further modifications or additions!
