@@ -97,11 +97,16 @@ Once all three scripts are running, open `http://localhost:3000` in a browser to
 
 1. **Dashboard**: View and interact with devices and sensors in the main interface.
 2. **Admin Menu**: Manage rooms, switches, and sensors via the `/admin` endpoint.
-3. **Charts**: Analyze device metrics and sensor data at `/charts`.
+
+   
+<img width="491" alt="Screenshot 2024-12-10 at 10 15 49" src="https://github.com/user-attachments/assets/46701331-3ee7-46d8-a595-3bf7fed3b0d5">
+
+
+4. **Charts**: Analyze device metrics and sensor data at `/charts`.
+
 
 <img width="490" alt="Screenshot 2024-12-10 at 10 12 11" src="https://github.com/user-attachments/assets/8e34ec0f-dbed-4b62-9645-24d4fd294b49">
 
-<img width="491" alt="Screenshot 2024-12-10 at 10 15 49" src="https://github.com/user-attachments/assets/46701331-3ee7-46d8-a595-3bf7fed3b0d5">
 
 ---
 
