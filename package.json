@@ -1,0 +1,24 @@
+{
+  "name": "shelly-project",
+  "version": "1.0.0",
+  "description": "IoT project for managing Shelly devices",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "init-db": "node initDB.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mqtt": "^4.3.7",
+    "sqlite3": "^5.1.6"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "Alex Kurtz",
+  "license": "ISC"
+}
