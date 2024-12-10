@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Device Dashboard</title>
+    <link rel="stylesheet" href="charts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+  </head>
+  <body>
+    <div id="device-container">
+      <button onclick="goBack()">Back</button>
+      <h3 id="device-title">Loading...</h3>
+
+      <div class="chart-section">
+        <canvas id="voltage-chart"></canvas>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Voltage (V)</th>
+              <th>Frequency (Hz)</th>
+              <th>Current (A)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="table-voltage">--</td>
+              <td id="table-freq">--</td>
+              <td id="table-current">--</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="chart-section">
+        <canvas id="power-chart"></canvas>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Power (W)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="table-apower">--</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="chart-section">
+        <canvas id="sensor-chart-temperature"></canvas>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Temperature (C°)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="table-temperature">--</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="chart-section">
+        <canvas id="sensor-chart-humidity"></canvas>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Humidity (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="table-humidity">--</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="charts.js" defer></script>
+  </body>
+</html>

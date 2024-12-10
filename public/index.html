@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IoT System Dashboard</title>
+    <link href="css/theme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="page-container">
+      <header>
+        <h1>IoT Dashboard</h1>
+      </header>
+      <nav id="rooms-menu">
+        <!-- Menu delle stanze verrà popolato dinamicamente -->
+      </nav>
+      <div id="mainPage">
+        <div id="layout">
+          <!-- Menubar a sinistra -->
+
+          <main>
+            <container id="dashboard">
+              <section id="rooms-section">
+                <h2 id="rooms">Rooms</h2>
+                <table id="rooms-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Room Number</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody id="rooms-list"></tbody>
+                </table>
+              </section>
+              <section id="selected-room-section" style="display: none">
+                <h2>Selected Room</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Room Number</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody id="selected-room"></tbody>
+                </table>
+              </section>
+              <section id="devices-section" style="display: none">
+                <h2>Devices</h2>
+                <table>
+                  <thead id="device-table-header">
+                    <tr>
+                      <th>Name</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                      <th>Chart</th>
+                    </tr>
+                  </thead>
+                  <tbody id="device-list"></tbody>
+                </table>
+              </section>
+              <section id="sensors-section" style="display: none">
+                <h2>Sensors</h2>
+                <table>
+                  <thead id="sensor-table-header">
+                    <tr>
+                      <th>Switch</th>
+                      <th>Sensor</th>
+                      <th>Value</th>
+                      <th>Chart</th>
+                    </tr>
+                  </thead>
+                  <tbody id="sensor-list"></tbody>
+                </table>
+              </section>
+            </container>
+
+            <div id="mainAdmin">
+              <!-- Rooms Section -->
+              <section>
+                <h2>Manage Rooms</h2>
+                <table id="rooms-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Room Name</th>
+                      <th>Description</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="rooms-list-admin"></tbody>
+                </table>
+                <button class="create-button" onclick="createRoom()">
+                  Create Room
+                </button>
+              </section>
+
+              <!-- Switches Section -->
+              <section>
+                <h2>Manage Switches</h2>
+                <table id="switches-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Switch Name</th>
+                      <th>Room ID</th>
+                      <th>Topic Prefix</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="switches-list"></tbody>
+                </table>
+                <button class="create-button" onclick="createSwitch()">
+                  Create Switch
+                </button>
+              </section>
+
+              <!-- Sensor Section -->
+              <section>
+                <h2>Manage Sensors</h2>
+                <table id="switches-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Sensor Name</th>
+                      <th>Room ID</th>
+                      <th>Topic Prefix</th>
+                      <th>Value</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="sensors-list"></tbody>
+                </table>
+                <button class="create-button" onclick="createSensor()">
+                  Create Switch
+                </button>
+              </section>
+            </div>
+          </main>
+        </div>
+      </div>
+      <script src="api.js"></script>
+      <script src="app.js"></script>
+      <script src="admin.js"></script>
+    </div>
+  </body>
+</html>
