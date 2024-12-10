@@ -118,6 +118,3 @@ The application was tested using the following Shelly devices: **Shelly 1 PM Min
 
 The Shelly application was used to enable the MQTT protocol on the devices. Subsequently, the devices were managed locally through the implementation of a Mosquitto broker, which facilitated the communication between the application and the devices via MQTT. This setup allowed for thorough testing of the application’s features, including real-time monitoring, device control, and data visualization.
 
----
-
-Let me know if you need further modifications or additions!
