@@ -83,12 +83,12 @@ To start the application, it is necessary to execute three scripts: `server.js`,
 
 2. Start the devices API service:
    ```bash
-   node devices_api.js
+   node api/devices_api.js
    ```
 
 3. Start the MQTT passive analysis service:
    ```bash
-   node mqttServiceAnalysisPassive.js
+   node services/mqttServiceAnalysisPassive.js
    ```
 
 Once all three scripts are running, open `http://localhost:3000` in a browser to access the dashboard.
